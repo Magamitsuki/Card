@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 * {
   margin: 0;
-  padding: 0;
+
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
@@ -10,14 +10,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 190vh;
-  background: linear-gradient(55deg, rgb(105, 105, 105), rgb(224, 224, 224));
+  min-height: 100vh;
+  background: linear-gradient(180deg, rgb(187, 187, 187), rgb(224, 224, 224));
 }
 
 .card {
   position: relative;
   width: 350px;
   height: 190px;
+
   background: whitesmoke;
   border-radius: 20px;
   box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
@@ -106,11 +107,18 @@ body {
 .card .content .details .actionBtn button {
   padding: 10px 30px;
   border-radius: 5px;
-  border: none;
+  border: 2px solid rgb(105, 105, 105);
   outline: none;
   font-size: 1em;
   font-weight: 500;
   background: rgb(105, 105, 105);
   color: white;
   cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .content .details .actionBtn button:hover {
+  color: rgb(43, 82, 25);
+  background: none;
+  border: 2px solid rgb(43, 82, 25);
 }
